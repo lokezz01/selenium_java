@@ -1,0 +1,19 @@
+package Interacting_Web_Elements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class sendingData {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.msedge.driver", "C:\\Users\\sugumaran.b\\Desktop\\workspace\\Driver_v1\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.get("hhtps://www.automationtesting.co.uk/contactForm.html");
+		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("Sugumaran");
+		
+	}
+
+}

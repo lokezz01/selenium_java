@@ -1,0 +1,27 @@
+package Interacting_Web_Elements;
+
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+
+
+public class Assertion_pt2 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.msedge.driver", "C:\\Users\\sugumaran.b\\Desktop\\workspace\\Driver_v1\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.automationtesting.co.uk");
+		driver.findElement(By.cssSelector("body > div.cookies > div > div > a.close-cookie-warning > span")).click();
+		driver.findElement(By.linkText("TEST STORE")).click();
+		driver.findElement(By.cssSelector("#content > section > div > article:nth-child(1) > div > a > img")).click();
+		driver.findElement(By.cssSelector("#add-to-cart-or-refresh > div.product-add-to-cart > div > div.add > button")).click();
+		Thread.sleep(3000);
+		System.out.println(driver.findElement(By.xpath("//*[@id=\"blockcart-modal\"]/div/div/div[2]/div/div[2]/div/p[5]/span[2]")));
+	}
+
+}

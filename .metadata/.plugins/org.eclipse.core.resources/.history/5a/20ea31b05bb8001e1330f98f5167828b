@@ -1,0 +1,10 @@
+package Interacting_Web_Elements;
+
+public class checkBoex_isSelected {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

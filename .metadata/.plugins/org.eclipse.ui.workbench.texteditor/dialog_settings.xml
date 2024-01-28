@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="while(iterate.hasNext()) {"/>
+		<list key="findhistory">
+			<item value="while(iterate.hasNext()) {"/>
+			<item value="String MainWindow=driver.getWindowHandle();"/>
+			<item value="&#x0D;&#x0A;&#x09;&#x09;System.out.println(driver.findElement(By.xpath(&quot;//*[@id=\&quot;main\&quot;]/div/div[1]/div[2]/label[3]&quot;)).isSelected());&#x0D;&#x0A;&#x09;&#x09;"/>
+			<item value="System.out.println(driver.findElement(By.xpath(&quot;//*[@id=\&quot;cb_red\&quot;]&quot;)).isSelected());"/>
+		</list>
+	</section>
+</section>
